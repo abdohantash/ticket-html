@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ticket-2</title>
+  <link rel="shortcut icon" href="assets/img/logo.jpg" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<!-- start page -->
+<div class="ticket-page">
+  <!-- header page -->
+  <div class="header-part">
+    <div class="title-page">
+      <a href="#" class="back-icon">
+        <img src="assets/img/icons/arrow-right.svg" alt="">
+      </a>
+      <h3>تذكرة رقم #2342</h3>
+    </div>
+    <div class="controls">
+      <button class="edit-btn">
+        <img src="assets/img/icons/edit.svg" alt="">
+        تعديل
+      </button>
+    </div>
+  </div>
+
+  <!-- chart and ticket -->
+  <div class="chart-and-ticket">
+    <!-- chart card -->
+    <div class="card chart-card">
+      <div class="header-chart">
+        <div class="title-chart">
+          <h5>إحصائيات إستخدام القسيمة</h5>
+          <p>05 يوليو , 2023 - 05 أغسطس , 2023 <img src="assets/img/icons/arrow-down.svg" alt=""></p>
+        </div>
+        <div class="select-box">
+          <select class="select-custom">
+            <option value="">سنويا</option>
+            <option value="">شهريا</option>
+          </select>
+        </div>
+      </div>
+      <!-- chart -->
+      <div id="chart" class="chart"></div>
+    </div>
+
+    <!-- ticket box -->
+    <div class="ticket-box">
+      <button class="delete-ticket" aria-label="حذف" data-microtip-position="bottom" role="tooltip">
+        <img src="assets/img/icons/trash.svg" alt="">
+      </button>
+      <div class="title-box">
+        <h5>عرض التذكرة الخاصة بالفيلم</h5>
+      </div>
+      <div class="ticket-link">
+        <p>www.tazkty.com/473847</p>
+        <button type="button" class="copy-ticket" aria-label="نسخ الرابط" data-microtip-position="top" role="tooltip">
+          <img src="assets/img/icons/copy.svg" alt="">
+        </button>
+      </div>
+      <span class="expiry-date">فعال حتي 15 يوليو 2023</span>
+      <div class="line"></div>
+      <div class="offer-and-qr">
+        <div class="discount-share">
+          <p>
+            خصم
+            <span>25%</span>
+          </p>
+          <button class="share-btn">
+            <img src="assets/img/icons/send.svg" alt="">
+            مشاركة
+          </button>
+        </div>
+        <img class="qr-code" src="assets/img/qr.svg" alt="">
+      </div>
+    </div>
+  </div>
+
+  <!-- ticket sales -->
+  <div class="ticket-sales">
+    <div class="filters-and-booking">
+      <h3 class="title-part">مبيعات التذاكر</h3>
+      <!-- search filters -->
+      <div class="search-filters">
+        <div class="search-box">
+          <img src="assets/img/icons/search.svg" alt="">
+          <input type="text" class="search-input" placeholder="بحث عن ...">
+        </div>
+        <button class="btn-filters" aria-label="تصنيف" data-microtip-position="top" role="tooltip">
+          <img src="assets/img/icons/setting.svg" alt="">
+        </button>
+        <button class="btn-filters" aria-label="ترتيب" data-microtip-position="top" role="tooltip">
+          <img src="assets/img/icons/arrow.svg" alt="">
+        </button>
+      </div>
+      <!-- status and booking -->
+        <div class="ticket-status" aria-label="حالة التذكرة" data-microtip-position="top" role="tooltip">
+          <label class="switch" for="checkbox">
+            <input type="checkbox" id="checkbox" />
+            <div class="slider-btn"></div>
+          </label>
+          <span class="text-status">مفعلة</span>
+        </div>
+        <button class="booking-btn">حجز تذكرة جديدة</button>
+    </div>
+
+    <div class="card">
+      <!-- table tickets -->
+      <div class="table-responsive">
+        <table class="table-tickets">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>المستخدم</th>
+              <th>رقم التذكرة</th>
+              <th>
+                قيمة التذكرة
+                <button class="sort-icon">
+                  <img src="assets/img/icons/arrow-sort.svg" alt="">
+                </button>
+              </th>
+              <th>السينمات</th>
+              <th>عدد الأشخاص</th>
+              <th>عدد مرات الشراء</th>
+              <th>التذكرة</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="custom-font">1</span></td>
+              <td>
+                <div class="user-details">
+                  <div class="circle-icon">
+                    <span>ma</span>
+                  </div>
+                  <div class="user-name">
+                    <h6>أحمد محمود</h6>
+                    <p>0123456789</p>
+                  </div>
+                </div>
+              </td>
+              <td><span class="custom-font">C-101</span></td>
+              <td><span class="custom-font">$40</span></td>
+              <td>
+                <div class="cinema-name"
+                  aria-label="سينما مصر , مول العرب , برج الأطنان , سرايا القبة , صيدناوي مول , برج العرب"
+                  data-microtip-position="top" role="tooltip">
+                  <p>سينما مصر , مول العرب , برج الأطنان , سرايا القبة , صيدناوي مول , برج العرب</p>
+                </div>
+              </td>
+              <td><span class="custom-font">1</span></td>
+              <td>مرة واحدة</td>
+              <td>
+                <div class="download-ticket">
+                  <div class="ticket-icon">
+                    <img src="assets/img/icons/ticket.svg" alt="">
+                  </div>
+                  <div class="ticket-details">
+                    <h6>تذكرة رقم <span>45.pdf</span></h6>
+                    <p>
+                      <b>pdf</b>
+                      .
+                      <span>9mb</span>
+                    </p>
+                  </div>
+                  <a href="#" download="" class="download-btn">
+                    <img src="assets/img/icons/download.svg" alt="">
+                  </a>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><span class="custom-font">2</span></td>
+              <td>
+                <div class="user-details">
+                  <img src="assets/img/avatar/user1.svg" alt="">
+                  <div class="user-name">
+                    <h6>محمد الغريب</h6>
+                    <p>0123456789</p>
+                  </div>
+                </div>
+              </td>
+              <td><span class="custom-font">C-102</span></td>
+              <td><span class="custom-font">$30</span></td>
+              <td>
+                <div class="cinema-name"
+                  aria-label="سينما مصر , مول العرب , برج الأطنان , سرايا القبة , صيدناوي مول , برج العرب"
+                  data-microtip-position="top" role="tooltip">
+                  <p>سينما مصر , مول العرب , برج الأطنان , سرايا القبة , صيدناوي مول , برج العرب</p>
+                </div>
+              </td>
+              <td><span class="custom-font">1</span></td>
+              <td>مرة واحدة</td>
+              <td>
+                <div class="download-ticket">
+                  <div class="ticket-icon">
+                    <img src="assets/img/icons/ticket.svg" alt="">
+                  </div>
+                  <div class="ticket-details">
+                    <h6>تذكرة رقم <span>45.pdf</span></h6>
+                    <p>
+                      <b>pdf</b>
+                      .
+                      <span>9mb</span>
+                    </p>
+                  </div>
+                  <a href="#" download="" class="download-btn">
+                    <img src="assets/img/icons/download.svg" alt="">
+                  </a>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><span class="custom-font">3</span></td>
+              <td>
+                <div class="user-details">
+                  <img src="assets/img/avatar/user2.svg" alt="">
+                  <div class="user-name">
+                    <h6>محمد الغريب</h6>
+                    <p>0123456789</p>
+                  </div>
+                </div>
+              </td>
+              <td><span class="custom-font">C-103</span></td>
+              <td><span class="custom-font">$45</span></td>
+              <td>
+                <div class="cinema-name"
+                  aria-label="سينما مصر , مول العرب , برج الأطنان , سرايا القبة , صيدناوي مول , برج العرب"
+                  data-microtip-position="top" role="tooltip">
+                  <p>سينما مصر , مول العرب , برج الأطنان , سرايا القبة , صيدناوي مول , برج العرب</p>
+                </div>
+              </td>
+              <td><span class="custom-font">1</span></td>
+              <td>مرة واحدة</td>
+              <td>
+                <div class="download-ticket">
+                  <div class="ticket-icon">
+                    <img src="assets/img/icons/ticket.svg" alt="">
+                  </div>
+                  <div class="ticket-details">
+                    <h6>تذكرة رقم <span>45.pdf</span></h6>
+                    <p>
+                      <b>pdf</b>
+                      .
+                      <span>9mb</span>
+                    </p>
+                  </div>
+                  <a href="#" download="" class="download-btn">
+                    <img src="assets/img/icons/download.svg" alt="">
+                  </a>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><span class="custom-font">4</span></td>
+              <td>
+                <div class="user-details">
+                  <div class="circle-icon bg-gray">
+                    <span>ma</span>
+                  </div>
+                  <div class="user-name">
+                    <h6>محمد الغريب</h6>
+                    <p>0123456789</p>
+                  </div>
+                </div>
+              </td>
+              <td><span class="custom-font">C-104</span></td>
+              <td><span class="custom-font">$54</span></td>
+              <td>
+                <div class="cinema-name"
+                  aria-label="سينما مصر , مول العرب , برج الأطنان , سرايا القبة , صيدناوي مول , برج العرب"
+                  data-microtip-position="top" role="tooltip">
+                  <p>سينما مصر , مول العرب , برج الأطنان , سرايا القبة , صيدناوي مول , برج العرب</p>
+                </div>
+              </td>
+              <td><span class="custom-font">1</span></td>
+              <td>مرة واحدة</td>
+              <td>
+                <div class="download-ticket">
+                  <div class="ticket-icon">
+                    <img src="assets/img/icons/ticket.svg" alt="">
+                  </div>
+                  <div class="ticket-details">
+                    <h6>تذكرة رقم <span>45.pdf</span></h6>
+                    <p>
+                      <b>pdf</b>
+                      .
+                      <span>9mb</span>
+                    </p>
+                  </div>
+                  <a href="#" download="" class="download-btn">
+                    <img src="assets/img/icons/download.svg" alt="">
+                  </a>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="view-and-pagination">
+        <!-- view rows -->
+        <div class="view-rows">
+          عرض
+          <div class="select-box">
+            <select class="select-custom">
+              <option value="">20</option>
+              <option value="">50</option>
+              <option value="">100</option>
+            </select>
+          </div>
+          من اصل <span class="custom-font">250</span>
+        </div>
+        <!-- pagination -->
+        <ul class="pagination-list">
+          <li class="page-item disabled">
+            <a href="#"><img src="assets/img/icons/arrows-chevron.svg" alt=""></a>
+          </li>
+          <li class="page-item active">
+            <a href="#">1</a>
+          </li>
+          <li class="page-item">
+            <a href="#">2</a>
+          </li>
+          <li class="page-item">
+            <a href="#">3</a>
+          </li>
+          <li class="page-item">
+            <a href="#">4</a>
+          </li>
+          <li class="page-item">
+            <a href="#">5</a>
+          </li>
+          <li class="page-item">
+            <a href="#"><img src="assets/img/icons/arrows-chevron.svg" alt=""></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+
+  <script src="assets/js/echarts.min.js"></script>
+  <script src="assets/js/scripts.js"></script>
+</body>
+
+</html>
