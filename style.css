@@ -4,16 +4,19 @@
 @font-face {
   font-family: 'Neo Sans Arabic';
   src: url(assets/fonts/NeoSansArabic.ttf);
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'montserrat';
   src: url(assets/fonts/montserrat.ttf);
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'Inter';
   src: url(assets/fonts/Inter.ttf);
+  font-display: swap;
 }
 
 ::-webkit-scrollbar {
